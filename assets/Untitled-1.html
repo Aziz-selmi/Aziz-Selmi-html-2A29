@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8"> 
+  <title>Accueil</title>
+</head>
+<body>
+
+  <header>
+    <h1>Accueil</h1>
+    <nav>
+      <!--<ul>-->
+        <a href="#">Home</a>
+        <a href="#">Projets et tâches</a>
+        <a href="#">Liste employés</a>
+        <a href="#">Inscription</a>
+      <!--</ul>-->
+    </nav>
+    <img src="assets\image1.jpeg" alt="Image d'accueil">
+    <section>
+      <h2>Notre entreprise</h2>
+      <table>
+        <tr>
+          <th>Nom</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Accueil</td>
+          <td>Informations générales sur l'entreprise</td>
+        </tr>
+        <tr>
+          <td>Projets et tâches</td>
+          <td>Liste des projets et des tâches en cours</td>
+        </tr>
+        <tr>
+          <td>Liste employés</td>
+          <td>Liste des employés de l'entreprise</td>
+        </tr>
+        <tr>
+          <td>Inscription</td>
+          <td>Formulaire d'inscription</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Nos valeurs</h2>
+      <div style="display: flex; justify-content: space-between;">
+        <img src="assets\image1.jpeg" alt="Image 1">
+        <img src="assets\image1.jpeg" alt="Image 2">
+        <img src="assets\image1.jpeg" alt="Image 3">
+      </div>
+    </section>
+    
+    <footer>
+      <p>Contactez-nous :</p>
+      <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+      <p>123, rue de l'exemple</p>
+    </footer>
+    
+    <form action="inscription.php" method="post">
+      <table>
+        <tr>
+          <td><label for="nom">Nom</label></td>
+          <td><input type="text" id="nom" name="nom" required pattern="[A-Za-z]+" title="Seules les lettres alphabétiques sont autorisées (au moins 2 caractères)"></td>
+          <td><span id="nom-error">Veuillez entrer un nom valide (lettres uniquement)</span></td>
+        </tr>
+        <tr>
+          <td><label for="prenom">Prénom</label></td>
+          <td><input type="text" id="prenom" name="prenom" required pattern="[A-Za-z]+" title="Seules les lettres alphabétiques sont autorisées (au moins 2 caractères)"></td>
+          <td><span id="prenom-error">Veuillez entrer un prénom valide (lettres uniquement)</span></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:-[a-z0-9])*\.)+[a-z0-9](?:-[a-z0-9])*" title="Veuillez entrer une adresse email valide"></td>
+          <td><span id="email-error">Veuillez entrer une adresse email valide</span></td>
+        </tr>
+        <tr>
+          <td><label for="telephone">Téléphone</label></td>
+          <td><input type="tel" id="telephone" name="telephone" required pattern="\d{8}" title="Veuillez entrer un numéro de téléphone valide (8 chiffres)"></td>
+          <td><span id="telephone-error">Veuillez entrer un numéro de téléphone valide (8 chiffres)</span></td>
+        </tr>
+        <tr>
+          <td><label for="date_naissance">Date de naissance</label></td>
+          <td><input type="date" id="date_naissance" name="date_naissance" required></td>
+          <td><span id="date_naissance-error">Veuillez entrer une date de naissance valide</span></td>
+        </tr>
+        <tr>
+          <td><label for="password">Mot de passe</label></td>
+          <td><input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" title="Veuillez entrer un mot de passe valide (au moins 8 caractères, incluant au moins un chiffre, une lettre minuscule et une lettre majuscule)"></td>
+          <td><span id="password-error">Veuillez entrer un mot de passe valide (au moins 8 caractères, incluant au moins un chiffre, une lettre minuscule et une lettre majuscule)</span></td>
+        </tr>
+        <tr>
+          <td colspan="3"><button type="submit">S'inscrire</button></td>
+        </tr>
+      </table>
+    </form>
+    
+    
+    
+  </header>
